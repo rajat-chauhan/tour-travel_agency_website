@@ -24,6 +24,10 @@
     background-color: grey;
     position: relative;
 }
+.header2{
+    position: fixed;
+    
+}
 #title{
     color: white;
     position: absolute;
@@ -70,7 +74,7 @@
     width: 95vw;
     padding: 5px;
     border: 2px solid darkgrey;
-    margin-top: 2px;
+    margin-top: 10.5vh;
     margin-left: 4px;
     background-color: rgb(236, 233, 233);
 }
@@ -86,6 +90,7 @@
     position: relative;
     width: 96vw;
     height: 90vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,4 +511,76 @@
 #page2{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+#page2-heading{
+    text-align: center;
+    margin-top: 11vh;
+}
+.page2-headAlpha{
+    background-color: rgb(245, 206, 135);
+    color: rgb(207, 24, 24);
+    width: 5px;
+    height: 4px;
+    padding: 4px;
+}
+.page2-content{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+.page2-form{
+    width: 50%;
+    margin-left: 10px;
+}
+.page2-formContt{
+    box-shadow: 5px 5px 10px darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 74vh;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+.page2-formContt label{
+    font-weight: bold;
+    opacity: 0.7;
+}
+.page2-image{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+.page2-image img{
+    width: 50vw;
+    height: 85vh;
+}
+.form-textboxes{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    margin: 12px;
+}
+.bookNow-btn{
+    padding: 8px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 12vw;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.form-textboxes:hover{
+    background-color: rgb(240, 236, 236);
+}
+.bookNow-btn:hover{
+    background-color: green;
+}
+
