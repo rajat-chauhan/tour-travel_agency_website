@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Frank Ruhl Libre', serif;
+    overflow-x: hidden;
+}
+
+
+/* Page-1 */
+#body, #page1{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: grey;
+    position: relative;
+}
+#title{
+    color: white;
+    position: fixed;
+    left: 8%;
+}
+#t{
+    color: orange;
+}
+.top-nav{
+    position: absolute;
+    right: 10%;
+    left: 20%;
+}
+.top-nav-list{
+    overflow: hidden;
+    padding-left: 16%;
+    padding-right: 5%;
+}
+.top-nav-items{
+    display: inline;
+    padding: 5px;
+}
+.top-href{
+    text-decoration: none;
+    color: white;
+}
+.icons{
+    position: fixed;
+    right: 5%;
+    padding: 5px;
+}
+
+#user, #search{
+    color: white;
+    margin: 4px 4px 4px 8px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.search2{
+    width: 95vw;
+    padding: 5px;
+    border: 2px solid darkgrey;
+    margin-top: 2px;
+    margin-left: 4px;
+    background-color: rgb(236, 233, 233);
+}
+.displaySearch{
+    display: block;
+}
+.search-cross{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.form-container{
+    position: relative;
+    width: 96vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid green; */
+    display: none;
+}
+.displayForm{
+    display: block;
+}
+#form{
+    background-color: rgb(173, 170, 170);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 4px;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+#form-heading{
+    text-align: center;
+    opacity: 0.6;
+}
+.form-email{
+    padding: 5px;
+    width: 35vw;
+    margin: 3px;
+}
+.form-pswd{
+    padding: 5px;
+    width: 35vw;
+    margin: 3px;
+}
+.form-btn{
+    padding: 5px;
+    width: 35vw;
+    margin: 3px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.form-checkbox{
+    display: flex;
+    align-self: start;
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 5px 5px 0 17px;
+}
+.label-form{
+    margin-left: 4px;
+}
+.forget-pswd, .no-accnt{
+    margin-left: 5px;
+    padding-top: 2px;
+}
+.click-here, .rgstr-now{
+    text-decoration: none;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+}
+.cross-mark{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+}
+
+.fa-bars{
+    position: fixed;
+    left: 2%;
+    color: white;
+    display: none;
+}
+.side-nav{
+    border: 2px solid blue;
+    width: 20vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    display: none;
+}
+.displaySideNav{
+    display: block;
+}
+.side-nav-list{
+    list-style-type: none;
+    position: absolute;
+    left: 5px;
+}
+.side-nav-items{
+    padding: 5px;
+    margin-top: 10px;
+}
+.side-href{
+    text-decoration: none;
+}
+.cross-mark-sideNav{
+    margin-top: 5px;
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+}
+
+.content{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-head{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+.content-desc{
+    padding: 8px;
+}
+.content-btn{
+    padding: 8px 10px;
+    margin: 4px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* For Responsive Page-1 */
+@media screen and (min-width: 750px) and (max-width: 925px) {
+    .top-nav{
+        position: absolute;
+        right: 11%;
+        left: 22%;
+    }
+    .top-nav-list{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #title{
+        position: fixed;
+        left: 2%;
+        font-size: 1.5rem;
+    }
+    .top-nav-items{
+        font-size: 16px;
+        padding: 3px;
+    }  
+    .fa-bars{
+        display: none;
+    }
+    .search-box{
+        margin-left: 2px;
+    } 
+    .search2{
+        width: 90vw;
+        padding: 5px;
+    } 
+    .search-cross{
+        font-size: 18px;
+        margin-left: 8px;
+    }  
+    .icons{
+        padding: 3px;
+    }
+    
+    #user, #search{
+        margin: 2px;
+    }
+    .header-right{
+        width: 2vw;
+    }  
+    #form{
+        width: 65vw;
+        align-items: center;
+        justify-content: center; 
+        border-radius: 10px;
+        padding: 4px;
+        margin: 3px;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    } 
+    .form-email{
+        width: 60vw;
+    }
+    .form-pswd{
+        width: 60vw;
+    }
+    .form-btn{
+        width: 60vw;
+    }
+    .form-checkbox{
+        display: flex;
+        align-self: start;
+        font-size: 14px;
+        margin-left: 5px;
+        padding: 5px;    
+    }
+    .label-form{
+        margin-left: 4px;
+    }
+    .forget-pswd, .no-accnt{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 620px) and (max-width: 750px) {
+    .top-nav{
+        position: absolute;
+        right: 11%;
+        left: 18%;
+    }
+    .top-nav-list{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #title{
+        position: fixed;
+        left: 2%;
+        font-size: 1.5rem;
+    }
+    .top-nav-items{
+        font-size: 14px;
+        padding: 3px;
+    }  
+    .fa-bars{
+        display: none;
+    }
+    .search-box{
+        margin-left: 2px;
+    } 
+    .search2{
+        width: 90vw;
+        padding: 5px;
+    } 
+    .search-cross{
+        font-size: 18px;
+        margin-left: 8px;
+    }  
+    .icons{
+        padding: 3px;
+    }
+    
+    #user, #search{
+        margin: 2px;
+    }
+    .header-right{
+        width: 2vw;
+    }  
+    #form{
+        width: 65vw;
+        align-items: center;
+        justify-content: center; 
+        border-radius: 10px;
+        padding: 4px;
+        margin: 3px;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    } 
+    .form-email{
+        width: 60vw;
+    }
+    .form-pswd{
+        width: 60vw;
+    }
+    .form-btn{
+        width: 60vw;
+    }
+    .form-checkbox{
+        display: flex;
+        align-self: start;
+        font-size: 14px;
+        margin-left: 5px;
+        padding: 5px;    
+    }
+    .label-form{
+        margin-left: 4px;
+    }
+    .forget-pswd, .no-accnt{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 358px) and (max-width: 619px){
+    .top-nav{
+        display: none;
+    } 
+    .content-desc{
+        text-align: center;
+    }  
+    .search2{
+        width: 86vw;
+        padding: 5px;
+    }
+    #form{
+        width: 72vw;
+        align-items: center;
+        justify-content: center; 
+        border-radius: 10px;
+        padding: 4px;
+        margin: 4px;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    } 
+    .form-email{
+        width: 65vw;
+    }
+    .form-pswd{
+        width: 65vw;
+    }
+    .form-btn{
+        width: 65vw;
+    }
+    .form-checkbox{
+        display: flex;
+        align-self: start;
+        font-size: 14px;
+        margin-left: 5px;
+        padding: 5px;    
+    }
+    .label-form{
+        margin-left: 4px;
+    }
+    .forget-pswd, .no-accnt{
+        font-size: 14px;
+    }
+
+    .fa-bars{
+        display: block;
+        left: 4%;
+    }
+    #title{
+        left: 25%;
+    }
+    .side-nav{
+        width: 30vw;
+        height: 90vh;
+    }
+    .side-href{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 357px){
+    .top-nav{
+        display: none;
+    } 
+    .fa-bars{
+        display: block;
+        left: 3%;
+        font-size: 12px;
+    }
+    #title{
+        left: 15%;
+        font-size: 20px;
+    }
+    .side-nav{
+        width: 40vw;
+        height: 90vh;
+    }
+    .side-href{
+        font-size: 0.8rem;
+    }
+    .search2{
+        width: 75vw;
+        padding: 5px;
+    }
+    #form{
+        width: 80vw;
+        align-items: center;
+        justify-content: center; 
+        border-radius: 10px;
+        padding: 4px;
+        margin: 4px;
+        position: absolute;
+        left: 5%;
+        top: 15%;
+    } 
+    .form-email{
+        width: 75vw;
+    }
+    .form-pswd{
+        width: 75vw;
+    }
+    .form-btn{
+        width: 75vw;
+    }
+    .form-checkbox{
+        display: flex;
+        align-self: start;
+        font-size: 12px;
+        margin-left: 3px;
+        padding: 4px;    
+    }
+    .label-form{
+        margin-left: 5px;
+    }
+    .forget-pswd, .no-accnt{
+        font-size: 12px;
+    }
+    .content-desc{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
+/* Page-2 */
+#page2{
+    width: 100vw;
+    height: 100vh;
+}
