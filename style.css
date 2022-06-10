@@ -435,6 +435,7 @@
         left: 25%;
     }
     .side-nav{
+        margin-top: 10vh;
         width: 30vw;
         height: 90vh;
     }
@@ -533,7 +534,6 @@
 }
 .page2-form{
     width: 50%;
-    margin-left: 10px;
 }
 .page2-formContt{
     box-shadow: 5px 5px 10px darkgray;
@@ -584,3 +584,49 @@
     background-color: green;
 }
 
+/* For Responsiveness Page-2 */
+@media screen and (min-width: 358px) and (max-width: 520px){
+    #page2{
+        background-image: url("./images/book2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .page2-headAlpha{
+        font-size: 1.1rem;
+    }
+    .page2-image img{
+        width: 100vw;
+        height: 90vh;
+    }
+    .page2-content{
+        display: block;
+        width: 100vw;     
+        height: 90vh;
+    }
+    .page2-form{
+        width: 100%;
+    }
+    .page2-image{
+        width: 100%;
+        display: none;
+    }
+    .page2-formContt{
+        width: 70vw;
+        height: 74vh;
+        padding: 5px;
+        margin-left: 15%;
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .page2-formContt label{
+        font-weight: bold;
+        opacity: 1;
+    }
+    .bookNow-btn{
+        width: 25vw;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 10px;
+    }
+   
+}
