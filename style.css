@@ -626,14 +626,19 @@
         font-weight: bold;
         opacity: 1;
     }
+    .form-textboxes{
+        padding: 10px;
+        margin: 12px;
+        width: 62vw;
+    }
     .bookNow-btn{
         width: 25vw;
         cursor: pointer;
         margin-top: 10px;
         padding: 10px;
         position: absolute;
-        bottom: 5%;
-        left: 29%;
+        bottom: 6.5%;
+        left: 30%;
     }
    
 }
