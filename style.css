@@ -672,10 +672,10 @@
     width: 100vw;
     height: 90vh;
     display: grid;
-    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-columns: 32vw 32vw 32vw;
     grid-template-rows: 40vh 40vh;
     grid-row-gap: 10px;
-    grid-column-gap: 15px;
+    grid-column-gap: 5px;
     margin-left: 5%;
 }
 .cards{
@@ -685,6 +685,9 @@
     justify-content: center;
     width: 25vw;
     height: auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px grey, -2px -2px 3px lightgrey;
+    cursor: pointer;
 }
 .card-icon img{
     width: 50px;
@@ -692,4 +695,32 @@
 }
 .card-desc{
     text-align: center;
+}
+
+
+
+@media screen and (min-width: 358px) and (max-width: 520px){
+    .p4_container{
+        width: 100vw;
+        height: 82vh;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: repeat(3, 1fr);  
+        grid-column-gap: 10px;     
+    }
+    .cards{
+        margin-left: 5%;
+        width: 40vw;
+        height: 25vh;
+        padding: 2px 5px 2px;
+    }
+    .card-icon img{
+        width: 20px;
+        height: 20px;
+    }
+    .card-title{
+        font-size: 12px;
+    }
+    .card-desc{
+        font-size: 11px;
+    }
 }
