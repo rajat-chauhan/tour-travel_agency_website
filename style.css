@@ -717,6 +717,7 @@
 @media screen and (min-width: 358px) and (max-width: 600px){
     #p4_heading{
         font-size: 1.2rem;
+        margin-bottom: 2px;
     }
     .p4_container{
         width: 100vw;
@@ -724,13 +725,13 @@
         grid-template-columns: 42vw 42vw;
         grid-template-rows: 26vh 26vh 26vh;  
         grid-column-gap: 10px;  
-        grid-row-gap: 5px;   
+        grid-row-gap: 3px;   
     }
     .cards{
         margin-top: 0.7vh;
         margin-left: 4%;
         width: 40vw;
-        height: 25vh;
+        height: 24vh;
         padding: 2px 5px 2px;
         box-shadow: 5px 5px 10px grey;
     }
