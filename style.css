@@ -511,13 +511,13 @@
 /* Page-2 */
 #page2{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 #page2-heading{
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 12vh;
 }
 .page2-headAlpha{
     background-color: rgb(245, 206, 135);
@@ -593,14 +593,16 @@
         background-repeat: no-repeat;
     }
     #page2-heading{
-        margin-top: 3.5vh;
-        margin-bottom: 2.5vh;
+        margin-top: 10vh;
+        margin-bottom: 1vh;
     }
     .page2-headAlpha{
         font-size: 1.2rem;
         background-color: rgb(48, 82, 45);
         color: white;
-        padding: 5px;
+        padding: 3px 5px 8px 5px;
+        width: 5px;
+        height: 5px;
     }
     .page2-image img{
         width: 100vw;
@@ -609,7 +611,7 @@
     .page2-content{
         display: block;
         width: 100vw;     
-        height: 90vh;
+        height: 100vh;
     }
     .page2-form{
         width: 100%;
@@ -620,7 +622,7 @@
     }
     .page2-formContt{
         width: 70vw;
-        height: 65vh;
+        height: 68vh;
         padding: 5px;
         margin-left: 15%;
         margin-top: 8px;
@@ -645,4 +647,49 @@
         left: 31%;
     }
    
+}
+
+/* Page-3 */
+#page3{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+/* Page-4 */
+#page4{
+    width: 100vw;
+    height: 100vh;
+}
+#p4_heading{
+    margin-top: 10vh;
+    text-align: center;
+}
+.p4_container{
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 40vh 40vh;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+    margin-left: 5%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: auto;
+}
+.card-icon img{
+    width: 50px;
+    height: 50px;
+}
+.card-desc{
+    text-align: center;
 }
