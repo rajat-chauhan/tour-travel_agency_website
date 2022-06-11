@@ -172,9 +172,9 @@
     display: none;
 }
 .side-nav{
-    border: 2px solid blue;
+    background-color: rgb(235, 226, 226);
     width: 20vw;
-    height: 90vh;
+    height: 60%;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -511,13 +511,13 @@
 /* Page-2 */
 #page2{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 }
 #page2-heading{
     text-align: center;
-    margin-top: 11vh;
+    margin-top: 4vh;
 }
 .page2-headAlpha{
     background-color: rgb(245, 206, 135);
@@ -592,6 +592,10 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    #page2-heading{
+        margin-top: 3.5vh;
+        margin-bottom: 2.5vh;
+    }
     .page2-headAlpha{
         font-size: 1.2rem;
         background-color: rgb(48, 82, 45);
@@ -616,10 +620,10 @@
     }
     .page2-formContt{
         width: 70vw;
-        height: 74vh;
+        height: 65vh;
         padding: 5px;
         margin-left: 15%;
-        margin-top: 15px;
+        margin-top: 8px;
         background-color: rgba(255, 255, 255, 0.7);
     }
     .page2-formContt label{
@@ -637,8 +641,8 @@
         margin-top: 10px;
         padding: 10px;
         position: absolute;
-        bottom: 6.5%;
-        left: 30%;
+        bottom: 8px;
+        left: 31%;
     }
    
 }
