@@ -239,7 +239,7 @@
         padding-right: 1%;
     }
     #title{
-        position: fixed;
+        position: absolute;
         left: 2%;
         font-size: 1.5rem;
     }
@@ -674,10 +674,14 @@
 }
 .p3_container{
     display: grid;
-    grid-template-columns: 35vw 35vw 35vw;
-    grid-template-rows: 75vh 75vh ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 85vh 85vh ;
     grid-row-gap: 15px;
     margin-left: 20px;
+    margin-right: 20px;
+}
+.card{
+    width: 30vw;
 }
 .card-title{
     overflow: hidden;
@@ -716,6 +720,7 @@
     }
     .card{
         margin: 5px;
+        width: 20rem;
     }
 }
 
