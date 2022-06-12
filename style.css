@@ -837,9 +837,10 @@
 /* For Responsiveness */
 @media screen and (min-width: 358px) and (max-width: 520px){
     #page7{
-        background-image: url("./images/contact2.jpg");
+        background-image: url("./images/contact_bg.jpg");
         background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     #p7_heading{
         margin-top: 11.5vh;
@@ -850,10 +851,6 @@
         padding: 3px 5px 8px 5px;
         width: 5px;
         height: 5px;
-    }
-    .p7_img img{
-        width: 70vw;
-        height: 100vh;
     }
     .p7_content{
         display: block;
