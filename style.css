@@ -922,7 +922,9 @@
     height: 30vh;
 }
 .p5_img_content{
-    visibility: hidden;
+    /* visibility: hidden; */
+    transform: translateY(-100%);
+    transition: transform .5s ease-in-out;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -935,8 +937,8 @@
     justify-content: center;
 }
 .displayP5Contt{
-    visibility: visible;
-    transition-delay: 0.2s;
+    /* visibility: visible; */
+    transform: translateY(0);   
 }
 .p5_img_heading{
     color: orange;
