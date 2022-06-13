@@ -34,3 +34,21 @@ sideNav_cross.addEventListener("click", function(){
     let sideNav_box = document.querySelector(".side-nav");
     sideNav_box.classList.remove("displaySideNav");
 })
+
+//Page-5
+
+let p5_img = document.querySelectorAll(".p5_images");
+
+for(let i=0; i< p5_img.length; i++){
+    p5_img[i].addEventListener("mouseenter", function(){
+        let display_p5Contt = document.querySelectorAll(".p5_img_content");
+        display_p5Contt[i].classList.add("displayP5Contt");
+    })
+}
+
+for(let i=0; i< p5_img.length; i++){
+    p5_img[i].addEventListener("mouseleave", function(){
+        let display_p5Contt = document.querySelectorAll(".p5_img_content");
+        display_p5Contt[i].classList.remove("displayP5Contt");
+    })
+}

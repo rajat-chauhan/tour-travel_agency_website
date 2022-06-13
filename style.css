@@ -589,25 +589,26 @@
 /* For Responsiveness Page-2 */
 @media screen and (min-width: 358px) and (max-width: 520px){
     #page2{
-        background-image: url("./images/book2.jpg");
+        background-image: url("./images/bookNow2.jpg");
         background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
     }
-    #page2-heading{
-        margin-top: 10vh;
-        margin-bottom: 1vh;
+    #page2_heading{
+        margin-top: 11vh;
+        text-align: center;
+        overflow: hidden;
     }
     .page2-headAlpha{
-        font-size: 1.2rem;
-        background-color: rgb(48, 82, 45);
-        color: white;
-        padding: 3px 5px 8px 5px;
+        background-color: rgb(230, 225, 225);
+        color: rgb(252, 171, 22);
         width: 5px;
-        height: 5px;
+        height: 3px;
+        padding: 2px 8px 2px;
     }
     .page2-image img{
         width: 100vw;
-        height: 90vh;
+        height: 100vh;
     }
     .page2-content{
         display: block;
@@ -623,11 +624,11 @@
     }
     .page2-formContt{
         width: 70vw;
-        height: 68vh;
+        height: 75vh;
         padding: 5px;
         margin-left: 15%;
         margin-top: 8px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(204, 181, 181, 0.7);
         box-shadow: none;
     }
     .page2-formContt label{
@@ -649,6 +650,7 @@
         left: 31%;
     }  
 }
+
 
 /* Page-3 */
 #page3{
@@ -781,6 +783,8 @@
     }
 }
 
+
+
 /* Page-4 */
 #page4{
     width: 100vw;
@@ -840,7 +844,7 @@
     font-weight: 600;
 }
 
-/* For Responsiveness */
+/* For Responsiveness Page-4*/
 @media screen and (min-width: 358px) and (max-width: 620px){
     #p4_heading{
         font-size: 1.2rem;
@@ -882,8 +886,94 @@
 /* Page-5 */
 #page5{
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+#p5_heading{
+    margin-top: 11vh;
+    text-align: center;
+    overflow: hidden;
+}
+.page5-headAlpha{
+    background-color: rgb(230, 225, 225);
+    color: rgb(252, 171, 22);
+    width: 5px;
+    height: 3px;
+    padding: 2px 8px 2px;
+}
+.p5_container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.p5_images{
+    position: relative;
+    cursor: pointer;
+}
+.p5_images img{
+    width: 25vw;
+    height: 30vh;
+}
+.p5_img_content{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.displayP5Contt{
+    visibility: visible;
+}
+.p5_img_heading{
+    color: orange;
+    overflow: hidden;
+}
+.p5_img_desc{
+    color: white;
+    text-align: center;
+}
+.p5_btns{
+    background-color: orange;
+    border: none;
+}
+
+/* For Responsiveness Page-5 */
+@media screen and (min-width: 358px) and (max-width: 520px){
+    .p5_container{
+        display: block;
+    }
+    .p5_images img{
+        width: 70vw;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .p5_img_heading{
+        font-size: 20px;
+    }
+    .p5_img_desc{
+        font-size: 12px;
+    }
+    .p5_btns{
+        width: 30vw;
+        height: 5vh;
+    }
+}
+
+
+
+
+
 
 
 /* Page-6 */
@@ -965,7 +1055,7 @@
     cursor: pointer;
 }
 
-/* For Responsiveness */
+/* For Responsiveness Page-7 */
 @media screen and (min-width: 358px) and (max-width: 520px){
     #page7{
         background-image: url("./images/contact_bg.jpg");
