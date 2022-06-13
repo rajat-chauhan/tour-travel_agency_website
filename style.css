@@ -316,7 +316,7 @@
         padding-right: 1%;
     }
     #title{
-        position: fixed;
+        position: absolute;
         left: 2%;
         font-size: 1.5rem;
     }
@@ -682,6 +682,7 @@
 }
 .card{
     width: 30vw;
+    box-shadow: 5px 5px 8px grey;
 }
 .card-title{
     overflow: hidden;
@@ -710,18 +711,73 @@
 
 
 /* For Responsiveness Page-3 */
-@media screen and (min-width: 358px) and (max-width: 620px){
+@media screen and (max-width: 365px){
     #p3_heading{
         font-size: 1.2rem;
         margin-bottom: 2px;
     }
     .p3_container{
-        display: block;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card{
+        margin: 5px 5px 8px;
+        width: auto;
+        box-shadow: 5px 5px 8px grey;
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 554px){
+    #p3_heading{
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    .p3_container{
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
     .card{
         margin: 5px 5px 8px;
         width: 19rem;
         box-shadow: 5px 5px 8px grey;
+    }
+}
+@media screen and (min-width: 555px) and (max-width: 700px){
+    #p3_heading{
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    .p3_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 68vh 68vh 68vh;
+        grid-row-gap: 15px;
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+    .card{
+        margin: 5px 5px 8px;
+        width: 15rem;
+        box-shadow: 5px 5px 8px grey;
+    }
+    .p3_btns{
+        font-size: 14px;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 651px) and (max-width: 1120px){
+    .p3_container{
+        grid-template-rows: auto auto ;
     }
 }
 
@@ -770,11 +826,11 @@
 .cards:hover{
     background-color: lightgrey;
 }
-.card-icon img{
+.p4_card-icon img{
     width: 50px;
     height: 50px;
 }
-.card-desc{
+.p4_card-desc{
     text-align: center;
 }
 
@@ -801,14 +857,17 @@
         padding: 2px 5px 2px;
         box-shadow: 5px 5px 10px grey;
     }
-    .card-icon img{
+    .p4_card-icon img{
         width: 20px;
         height: 20px;
+        margin-bottom: 5px;
     }
-    .card-title{
+    .p4_card-title{
         font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 2.5px;
     }
-    .card-desc{
+    .p4_card-desc{
         font-size: 11px;
     }
 }
