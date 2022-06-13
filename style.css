@@ -906,7 +906,7 @@
 .p5_container{
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-columns: 30vw 30vw 30vw;
     grid-template-rows: 30vh 30vh 30vh;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
@@ -914,9 +914,11 @@
 .p5_images{
     position: relative;
     cursor: pointer;
+    box-shadow: 10px 10px 15px grey;
+    width: 28vw;
 }
 .p5_images img{
-    width: 25vw;
+    width: 28vw;
     height: 30vh;
 }
 .p5_img_content{
@@ -934,39 +936,52 @@
 }
 .displayP5Contt{
     visibility: visible;
+    transition-delay: 0.2s;
 }
 .p5_img_heading{
     color: orange;
     overflow: hidden;
+    font-size: 1.4rem;
 }
 .p5_img_desc{
     color: white;
     text-align: center;
+    font-size: 15px;
 }
 .p5_btns{
     background-color: orange;
     border: none;
+    font-size: 14px;
+    width: 6vw;
+    height: auto;
 }
 
 /* For Responsiveness Page-5 */
 @media screen and (min-width: 358px) and (max-width: 520px){
     .p5_container{
         display: block;
+        width: 80vw;
+    }
+    .p5_images{ 
+        margin-left: 6.5%;
+        margin-bottom: 4%;
+        width: 70vw;
+        box-shadow: 5px 5px 8px rgb(71, 70, 70);
     }
     .p5_images img{
         width: 70vw;
         height: auto;
-        margin-bottom: 5px;
     }
     .p5_img_heading{
         font-size: 20px;
+        font-weight: 600;
     }
     .p5_img_desc{
         font-size: 12px;
     }
     .p5_btns{
-        width: 30vw;
-        height: 5vh;
+        width: 25vw;
+        height: auto;
     }
 }
 
