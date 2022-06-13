@@ -719,8 +719,9 @@
         display: block;
     }
     .card{
-        margin: 5px;
-        width: 20rem;
+        margin: 5px 5px 8px;
+        width: 19rem;
+        box-shadow: 5px 5px 8px grey;
     }
 }
 
