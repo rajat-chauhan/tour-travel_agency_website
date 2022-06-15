@@ -1459,7 +1459,10 @@
         width: 100vw;
     }
     .lower_footer{
-        padding-top: 50px;
+        padding-top: 80px;
+    }
+    .lower_footer_text{
+        font-size: 12px;
     }
     .footer_headings{
         font-size: 14px;
