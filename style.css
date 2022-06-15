@@ -200,9 +200,10 @@
 }
 
 .side-nav {
-    background-color: rgb(235, 226, 226);
+    background-color: rgb(155, 151, 151);
     width: 100vw;
-    height: 60%;
+    height: 90vh;
+    margin-top: 5px;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -215,23 +216,28 @@
 
 .side-nav-list {
     list-style-type: none;
-    position: absolute;
-    left: 5px;
+    padding: 0;
 }
 
 .side-nav-items {
     padding: 5px;
-    margin-top: 10px;
+    margin: 10px 3px 2px;
+    background-color: rgb(236, 215, 215);
 }
 
 .side-href {
     text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
 }
 
 .cross-mark-sideNav {
+    color: white;
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
+    top: 0;
     right: 5px;
 }
 
@@ -521,13 +527,15 @@
     }
 
     .side-nav {
-        margin-top: 10vh;
         width: 100vw;
-        height: 90vh;
+        height: 85vh;
+        margin-top: 14px;
     }
-
+    .side-nav-list{
+        margin-top: 80px;
+    }
     .side-href {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 }
 
