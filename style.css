@@ -1459,7 +1459,8 @@
         width: 100vw;
     }
     .lower_footer{
-        padding-top: 80px;
+        padding-top: 85px;
+        overflow: hidden;
     }
     .lower_footer_text{
         font-size: 12px;
