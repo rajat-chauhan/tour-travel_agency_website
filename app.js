@@ -29,10 +29,14 @@ search_cross.addEventListener("click", function(){
 bar_icon.addEventListener("click", function(){
     let sideNav_box = document.querySelector(".side-nav");
     sideNav_box.classList.add("displaySideNav");
+    bar_icon.classList.add("fa-bars_active");
+    sideNav_cross.classList.add("diplay_crossSideNav");
 })
 sideNav_cross.addEventListener("click", function(){
     let sideNav_box = document.querySelector(".side-nav");
     sideNav_box.classList.remove("displaySideNav");
+    sideNav_cross.classList.remove("diplay_crossSideNav");
+    bar_icon.classList.remove("fa-bars_active");
 })
 
 //Page-5
