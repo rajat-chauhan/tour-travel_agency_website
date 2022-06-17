@@ -1238,6 +1238,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 5px 10px grey;
 }
 .p6_card_contt{
     text-align: center;
@@ -1248,6 +1249,28 @@
     height: 17vh;
     border-radius: 50%;
 }
+
+/* For Responsiveness of Page-6 */
+@media screen and (min-width: 358px) and (max-width: 620px){
+    .p6_container{
+        margin-top: 12vh;
+    }
+    .p6_card{
+        margin: 10px;
+        width: 90vw;
+        height: auto;
+    }
+    .p6_img{
+        margin-top: 15px;
+        width: 36vw;
+        height: 18vh;
+        
+    }
+}
+
+
+
+
 
 
 /* Page-7 */
