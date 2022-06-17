@@ -56,3 +56,30 @@ for(let i=0; i< p5_img.length; i++){
         display_p5Contt[i].classList.remove("displayP5Contt");
     })
 }
+
+
+
+  // import Swiper JS
+import Swiper from 'swiper';
+  // import Swiper styles
+import 'swiper/css';
+
+var swiper = new Swiper(".p6_containerr", {
+    spaceBetween: 5,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});

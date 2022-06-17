@@ -204,7 +204,7 @@
     background-color: rgb(155, 151, 151);
     width: 100vw;
     height: 80vh;
-    margin-top: 1px;
+    margin-top: 4px;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -223,14 +223,18 @@
 .side-nav-items {
     padding: 5px;
     margin: 10px 3px 2px;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .side-href {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
+}
+
+.side-href:hover{
+    color: rgba(255, 255, 255, 1);
 }
 
 .cross-mark-sideNav {
@@ -1204,9 +1208,9 @@
 
 /* Page-6 */
 #page6 {
-    width: auto;
+    width: 100vw;
     height: 100vh;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 #p6_heading {
     margin-top: 11vh;
@@ -1221,12 +1225,15 @@
     padding: 2px 8px 2px;
 }
 .p6_container{
+    overflow: scroll;
     margin: 5px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 }
 .p6_card{
-    width: 25vw;
+    margin: 10px;
+    width: 20vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1237,8 +1244,8 @@
 }
 .p6_img{
     margin-top: 10px;
-    width: 10vw;
-    height: 18vh;
+    width: 9vw;
+    height: 17vh;
     border-radius: 50%;
 }
 
@@ -1397,7 +1404,7 @@
 /* Footer */
 .footer{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1468,7 +1475,35 @@
 }
 
 /* For Responsiveness of footer */
-@media screen and (min-width: 358px) and (max-width: 520px){
+@media screen and (min-width: 521px) and (max-width: 720px){
+    .footer_headings{
+        font-size: 12px;
+        color:rgb(255, 255, 255)
+    }
+    .footer_listItems{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .aboutUsDesc{
+        font-size: 12px;
+        font-weight: 300;    
+    }
+    .footer_icons img{
+        width: 30px;
+        height: 20px;
+        padding-right: 8px;
+    }
+    .lower_footer_text{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 520px){
+    .footer{
+        width: 100vw;
+        height: 100vh;
+    }
     .upper_footer{
         display: block;
         padding-left: 40px;
