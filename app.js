@@ -59,10 +59,10 @@ for(let i=0; i< p5_img.length; i++){
 
 
 
-  // import Swiper JS
-import Swiper from 'swiper';
-  // import Swiper styles
-import 'swiper/css';
+//   // import Swiper JS
+// import Swiper from 'swiper';
+//   // import Swiper styles
+// import 'swiper/css';
 
 var swiper = new Swiper(".p6_containerr", {
     spaceBetween: 5,
