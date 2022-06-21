@@ -686,30 +686,32 @@ html{
 /* Page-2 */
 .page2 {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.page2-heading {
-    text-align: center;
-    margin-top: 12vh;
+#page2-heading {
+    margin-top: 11.5vh;  
+    overflow: hidden;  
 }
 
 .page2-headAlpha {
-    background-color: rgb(245, 206, 135);
-    color: rgb(207, 24, 24);
+    background-color: rgb(230, 225, 225);
+    color: rgb(252, 171, 22);
     width: 5px;
-    height: 4px;
-    padding: 4px;
+    height: 3px;
+    padding: 2px 8px 2px;
 }
 
 .page2-content {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: auto;
 }
 
 .page2-form {
@@ -722,7 +724,7 @@ html{
     flex-direction: column;
     justify-content: center;
     width: 40vw;
-    height: 74vh;
+    height: 70vh;
     padding: 5px;
     margin-left: 15px;
     margin-top: 15px;
@@ -782,9 +784,10 @@ html{
         background-size: contain;
     }
 
-    .page2_heading {
-        margin-top: 20vh;
-        margin-bottom: 10px;
+    #page2_heading {
+        margin-top: 11.5vh;
+        margin-bottom: 14px;
+        text-align: center;
         overflow: hidden;
     }
 
@@ -792,8 +795,9 @@ html{
         background-color: rgb(230, 225, 225);
         color: rgb(252, 171, 22);
         width: 5px;
-        height: 4px;
+        height: 3px;
         padding: 2px 8px 2px;
+        overflow: hidden;
     }
 
     .page2-image img {
@@ -804,7 +808,7 @@ html{
     .page2-content {
         display: block;
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
 
     .page2-form {
@@ -821,7 +825,6 @@ html{
         height: 70vh;
         padding: 5px;
         margin-left: 15%;
-        margin-top: 8px;
         background-color: rgba(204, 181, 181, 0.7);
         box-shadow: none;
     }
