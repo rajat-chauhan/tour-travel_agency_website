@@ -8,22 +8,60 @@
     font-family: 'Frank Ruhl Libre', serif;
     overflow-x: hidden;
 }
-
 html{
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
     font-size: 62.5%;
     overflow-x: hidden;
 }
-
-/* Page-1 */
-#body,
-#page1 {
+.body{
     width: 100vw;
     height: 100vh;
     position: relative;
 }
+.position{
+    position: relative;
+    z-index: -1;
+}
 
+
+
+
+.side-nav {
+    background-color: rgb(155, 151, 151);
+    width: 100vw;
+    height: 80vh;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    display: none;
+}
+
+.side-nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav-items {
+    padding: 5px;
+    margin: 10px 3px 2px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.side-href {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+/* Page-1 */
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
 .header {
     width: 100vw;
     height: 10vh;
@@ -35,10 +73,6 @@ html{
     top: 0; left: 0; right: 0;
     z-index: 1000;
 }
-
-/* .header2{
-    position: fixed;   
-} */
 #title {
     color: white;
     position: absolute;
@@ -217,40 +251,6 @@ html{
     display: none;
 }
 
-.side-nav {
-    background-color: rgb(155, 151, 151);
-    width: 100vw;
-    height: 80vh;
-    margin-top: 4px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    display: none;
-}
-
-/* .displaySideNav {
-    display: block;
-} */
-
-.side-nav-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.side-nav-items {
-    padding: 5px;
-    margin: 10px 3px 2px;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.side-href {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 16px;
-}
-
-
 .cross-mark-sideNav {
     color: white;
     font-size: 20px;
@@ -260,6 +260,7 @@ html{
 }
 
 .content {
+    margin-top: 11vh;
     width: 100vw;
     height: 90vh;
     display: flex;
@@ -684,16 +685,15 @@ html{
 
 
 /* Page-2 */
-#page2 {
+.page2 {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
-    z-index: -1;
+    align-items: center;
 }
 
-#page2-heading {
+.page2-heading {
     text-align: center;
     margin-top: 12vh;
 }
@@ -776,17 +776,16 @@ html{
 
 /* For Responsiveness Page-2 */
 @media screen and (min-width: 358px) and (max-width: 520px) {
-    #page2 {
+    .page2 {
         background-image: url("./images/bookNow2.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
     }
 
-    #page2_heading {
-        margin-top: 11vh;
+    .page2_heading {
+        margin-top: 20vh;
         margin-bottom: 10px;
-        text-align: center;
         overflow: hidden;
     }
 
@@ -852,11 +851,9 @@ html{
 
 
 /* Page-3 */
-#page3 {
+.page3 {
     width: 100vw;
     height: auto;
-    position: relative;
-    z-index: -1;
 }
 
 #p3_heading {
@@ -1014,11 +1011,9 @@ html{
 
 
 /* Page-4 */
-#page4 {
+.page4 {
     width: 100vw;
     height: 100vh;
-    position: relative;
-    z-index: -1;
 }
 
 #p4_heading {
@@ -1129,14 +1124,12 @@ html{
 
 
 /* Page-5 */
-#page5 {
+.page5 {
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: -1;
 }
 
 #p5_heading {
@@ -1274,12 +1267,10 @@ html{
 
 
 /* Page-6 */
-#page6 {
-    width: 100vw;
+.page6 {
+    width: auto;
     height: 100vh;
     overflow-x: hidden;
-    position: relative;
-    z-index: -1;
 }
 #p6_heading {
     margin-top: 11.5vh;
@@ -1341,14 +1332,10 @@ html{
 
 
 
-
-
 /* Page-7 */
-#page7 {
+.page7 {
     width: 100vw;
     height: 100vh;
-    position: relative;
-    z-index: -1;
 }
 
 #p7_heading {
@@ -1433,7 +1420,7 @@ html{
 
 /* For Responsiveness Page-7 */
 @media screen and (min-width: 358px) and (max-width: 520px) {
-    #page7 {
+    .page7 {
         background-image: url("./images/contact_bg.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -1506,8 +1493,6 @@ html{
     flex-direction: column;
     align-items: center;
     background-color: rgb(29, 38, 45);
-    position: relative;
-    z-index: -1;
 }
 .footer_icons img{
     width: 40px;

@@ -3,8 +3,10 @@ let user_icon = document.getElementById("user");
 let form_cross = document.querySelector(".cross-mark");
 let search_icon = document.getElementById("search");
 let search_cross = document.querySelector(".search-cross");
-let bar_icon = document.querySelector(".fa-bars")
-let sideNav_cross = document.querySelector(".cross-mark-sideNav")
+let bar_icon = document.querySelector(".fa-bars");
+let sideNav_cross = document.querySelector(".cross-mark-sideNav");
+let side_href = document.querySelector(".side-href");
+
 
 user_icon.addEventListener("click", function(){
     let form = document.querySelector(".form-container");
@@ -31,13 +33,29 @@ bar_icon.addEventListener("click", function(){
     sideNav_box.classList.add("displaySideNav");
     bar_icon.classList.add("fa-bars_active");
     sideNav_cross.classList.add("diplay_crossSideNav");
+
+    let pages = document.querySelectorAll(".pages");
+    pages.forEach((value) => {
+        value.classList.add("position");
+    })
 })
+
 sideNav_cross.addEventListener("click", function(){
     let sideNav_box = document.querySelector(".side-nav");
     sideNav_box.classList.remove("displaySideNav");
     sideNav_cross.classList.remove("diplay_crossSideNav");
     bar_icon.classList.remove("fa-bars_active");
+
+    let pages = document.querySelectorAll(".pages");
+    pages.forEach((value) => {
+        value.classList.remove("position");
+    })
 })
+
+// side_href.addEventListener("click", function(){
+//     let sideNav_box = document.querySelector(".side-nav");
+//     sideNav_box.classList.toggle("displaySideNav");
+// })
 
 //Page-5
 
