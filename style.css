@@ -251,7 +251,7 @@ html{
 }
 
 .side-href:hover{
-    color: rgba(255, 255, 255, 1);
+    color: orange;
 }
 
 .cross-mark-sideNav {
@@ -577,6 +577,7 @@ html{
     .side-href {
         font-size: 1.2rem;
     }
+
     .icons {
         padding: 1px;
         margin-right: 2px;
@@ -1341,6 +1342,8 @@ html{
 #page7 {
     width: 100vw;
     height: 100vh;
+    position: relative;
+    z-index: -1;
 }
 
 #p7_heading {
