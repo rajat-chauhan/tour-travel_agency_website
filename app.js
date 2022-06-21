@@ -5,7 +5,6 @@ let search_icon = document.getElementById("search");
 let search_cross = document.querySelector(".search-cross");
 let bar_icon = document.querySelector(".fa-bars");
 let sideNav_cross = document.querySelector(".cross-mark-sideNav");
-let side_href = document.querySelector(".side-href");
 
 
 user_icon.addEventListener("click", function(){
@@ -52,10 +51,18 @@ sideNav_cross.addEventListener("click", function(){
     })
 })
 
-// side_href.addEventListener("click", function(){
-//     let sideNav_box = document.querySelector(".side-nav");
-//     sideNav_box.classList.toggle("displaySideNav");
-// })
+let side_href = document.querySelectorAll(".side-href");
+
+side_href.forEach((value) => {
+    value.addEventListener("click", function(){
+        let sideNav_box = document.querySelector(".side-nav");
+        sideNav_box.classList.remove("displaySideNav");    
+    });
+})
+
+
+
+
 
 //Page-5
 
