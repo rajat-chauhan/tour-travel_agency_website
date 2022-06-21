@@ -58,7 +58,12 @@ side_href.forEach((value) => {
         let sideNav_box = document.querySelector(".side-nav");
         sideNav_box.classList.remove("displaySideNav"); 
         sideNav_cross.classList.remove("diplay_crossSideNav");
-        bar_icon.classList.remove("fa-bars_active");   
+        bar_icon.classList.remove("fa-bars_active"); 
+        
+        let pages = document.querySelectorAll(".pages");
+        pages.forEach((value) => {
+            value.classList.remove("position");
+        })
     });
 })
 
