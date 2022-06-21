@@ -998,7 +998,8 @@ html{
 }
 
 #p4_heading {
-    margin-top: 11vh;
+    margin-top: 11.5vh;
+    margin-bottom: 10px;
     text-align: center;
     overflow: hidden;
 }
@@ -1059,10 +1060,10 @@ html{
 }
 
 /* For Responsiveness Page-4*/
-@media screen and (min-width: 358px) and (max-width: 620px) {
+@media screen and (min-width: 320px) and (max-width: 620px) {
     #p4_heading {
-        font-size: 1.2rem;
-        margin-bottom: 2px;
+        font-size: 16px;
+        margin-bottom: 4px;
     }
 
     .p4_container {
@@ -1071,14 +1072,15 @@ html{
         grid-template-columns: 42vw 42vw;
         grid-template-rows: 26vh 26vh 26vh;
         grid-column-gap: 10px;
-        grid-row-gap: 3px;
+        grid-row-gap: 2px;
+        margin-top: 10px;
     }
 
     .cards {
         margin-top: 0.7vh;
         margin-left: 4%;
-        width: 40vw;
-        height: 24vh;
+        width: 42vw;
+        height: 22vh;
         padding: 2px 5px 2px;
         box-shadow: 5px 5px 10px grey;
     }
@@ -1090,7 +1092,7 @@ html{
     }
 
     .p4_card-title {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 700;
         margin-bottom: 2.5px;
         overflow: hidden;
