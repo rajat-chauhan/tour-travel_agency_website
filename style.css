@@ -9,6 +9,12 @@
     overflow-x: hidden;
 }
 
+html{
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 
 /* Page-1 */
 #body,
@@ -24,7 +30,9 @@
     align-items: center;
     justify-content: space-around;
     background-color: grey;
-    position: relative;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
 }
 
 /* .header2{
@@ -43,13 +51,13 @@
 
 .top-nav {
     position: absolute;
-    right: 10%;
+    right: 5%;
     left: 20%;
 }
 
 .top-nav-list {
     overflow: hidden;
-    padding-left: 16%;
+    padding-left: 18%;
     padding-right: 5%;
 }
 
@@ -61,6 +69,10 @@
 .top-href {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+}
+.top-href:hover{
+    color: orange;
 }
 
 .icons {
@@ -73,6 +85,8 @@
 #search {
     color: white;
     margin: 4px 4px 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .search-box {
@@ -98,6 +112,7 @@
 .search-cross {
     font-size: 20px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .form-container {
@@ -190,6 +205,7 @@
     right: 10px;
     top: 10px;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .fa-bars {
@@ -289,14 +305,16 @@
     #title {
         position: absolute;
         left: 2%;
-        font-size: 1.5rem;
+        font-size: 18px;
     }
 
     .top-nav-items {
         font-size: 16px;
         padding: 3px;
     }
-
+    .top-href{
+        font-size: 14px;
+    }
     .search-box {
         margin-left: 2px;
     }
@@ -381,12 +399,18 @@
     #title {
         position: absolute;
         left: 2%;
-        font-size: 1.5rem;
+        font-size: 18px;
     }
 
     .top-nav-items {
         font-size: 14px;
         padding: 3px;
+    }
+    .top-nav-list{
+        margin-left: 12px;
+    }
+    .top-href{
+        font-size: 13px;
     }
 
     .search-box {
@@ -410,6 +434,7 @@
     #user,
     #search {
         margin: 2px;
+        font-size: 12px;
     }
 
     .header-right {
@@ -462,7 +487,11 @@
     .top-nav {
         display: none;
     }
-
+    #title {
+        left: 25%;
+        margin-left: 40px;
+        font-size: 25px;
+    }
     .content-desc {
         text-align: center;
     }
@@ -515,16 +544,13 @@
 
     .fa-bars {
         display: block;
+        font-size: 14px;
     }
     .fa-bars_active{
         display: none;
     }
     .diplay_crossSideNav{
         display: block;
-    }
-
-    #title {
-        left: 25%;
     }
 
     .side-nav {
@@ -538,6 +564,13 @@
     }
     .side-href {
         font-size: 1.2rem;
+    }
+    .icons {
+        padding: 1px;
+        margin-right: 2px;
+    }
+    #user, #search{
+    font-size: 14px;
     }
 }
 
@@ -565,7 +598,8 @@
         display: block;
     }
     #title {
-        left: 15%;
+        left: 25%;
+        margin-left: 25px;
         font-size: 20px;
     }
 
