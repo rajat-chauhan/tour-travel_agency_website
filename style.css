@@ -765,6 +765,7 @@ html{
 
     #page2_heading {
         margin-top: 11vh;
+        margin-bottom: 10px;
         text-align: center;
         overflow: hidden;
     }
@@ -773,7 +774,7 @@ html{
         background-color: rgb(230, 225, 225);
         color: rgb(252, 171, 22);
         width: 5px;
-        height: 3px;
+        height: 4px;
         padding: 2px 8px 2px;
     }
 
@@ -799,7 +800,7 @@ html{
 
     .page2-formContt {
         width: 70vw;
-        height: 75vh;
+        height: 70vh;
         padding: 5px;
         margin-left: 15%;
         margin-top: 8px;
@@ -820,8 +821,8 @@ html{
 
     .bookNow-btn {
         width: 25vw;
+        margin-bottom: 8px;
         cursor: pointer;
-        margin-top: 10px;
         padding: 10px;
         position: absolute;
         bottom: 8px;
@@ -837,7 +838,8 @@ html{
 }
 
 #p3_heading {
-    margin-top: 11vh;
+    margin-top: 11.4vh;
+    margin-bottom: 14px;
     text-align: center;
     overflow: hidden;
 }
@@ -860,27 +862,29 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 85vh 85vh;
-    grid-row-gap: 15px;
+    grid-row-gap: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .card {
-    width: 30vw;
+    width: 27vw;
+    height: 72vh;
     box-shadow: 5px 5px 8px grey;
 }
 
 .card-title {
     overflow: hidden;
-    font-size: 1.1rem;
+    font-size: 15px;
 }
 
 .card-text {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .price {
     font-weight: 800;
+    font-size: 14px;
 }
 
 .cutPrice {
@@ -892,7 +896,7 @@ html{
 
 .loc img {
     width: 20px;
-    height: 18px;
+    height: 15px;
     margin: 4px 4px 4px 0px;
 }
 
@@ -904,8 +908,8 @@ html{
 /* For Responsiveness Page-3 */
 @media screen and (max-width: 365px) {
     #p3_heading {
-        font-size: 1.2rem;
-        margin-bottom: 2px;
+        font-size: 16px;
+        margin-bottom: 4px;
     }
 
     .p3_container {
@@ -919,6 +923,7 @@ html{
     .card {
         margin: 5px 5px 8px;
         width: auto;
+        height: 62vh;
         box-shadow: 5px 5px 8px grey;
     }
 }
@@ -1247,7 +1252,8 @@ html{
     overflow-x: hidden;
 }
 #p6_heading {
-    margin-top: 11vh;
+    margin-top: 11.5vh;
+    margin-bottom: 20px;
     text-align: center;
     overflow: hidden;
 }
