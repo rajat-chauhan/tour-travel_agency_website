@@ -550,7 +550,6 @@ html{
     }
     .diplay_crossSideNav{
         display: block;
-        /* transform: translateX(0); */
     }
     .side-nav {
         width: 100vw;
@@ -561,13 +560,10 @@ html{
         left: 0;
         bottom: 0;
         top: 11vh;
-        /* transform: translateX(-100%);
-        transition: transform 1s ease-in-out; */
     }
 
     .displaySideNav{
         display: block;
-        /* transform: translateX(0); */
     }
     .hideSideNav{
         display: none;
@@ -860,7 +856,7 @@ html{
 }
 
 #p3_heading {
-    margin-top: 11.4vh;
+    margin-top: 11.5vh;
     margin-bottom: 14px;
     text-align: center;
     overflow: hidden;
@@ -952,7 +948,7 @@ html{
 
 @media screen and (min-width: 365px) and (max-width: 554px) {
     #p3_heading {
-        font-size: 1rem;
+        font-size: 16px;
         margin-bottom: 2px;
     }
 
@@ -1172,7 +1168,6 @@ html{
 }
 
 .p5_img_content {
-    /* visibility: hidden; */
     transform: translateY(-100%);
     transition: transform 1s ease-in-out;
     position: absolute;
@@ -1188,7 +1183,6 @@ html{
 }
 
 .displayP5Contt {
-    /* visibility: visible; */
     transform: translateY(0);
 }
 
@@ -1433,7 +1427,7 @@ html{
     #p7_heading {
         margin-top: 11.5vh;
         margin-bottom: 1vh;
-        font-size: 1.2rem;
+        font-size: 16px;
     }
 
     .p7_headAlpha {
