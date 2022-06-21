@@ -56,7 +56,9 @@ let side_href = document.querySelectorAll(".side-href");
 side_href.forEach((value) => {
     value.addEventListener("click", function(){
         let sideNav_box = document.querySelector(".side-nav");
-        sideNav_box.classList.remove("displaySideNav");    
+        sideNav_box.classList.remove("displaySideNav"); 
+        sideNav_cross.classList.remove("diplay_crossSideNav");
+        bar_icon.classList.remove("fa-bars_active");   
     });
 })
 
