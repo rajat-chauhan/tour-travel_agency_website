@@ -361,9 +361,6 @@ html{
     .top-href{
         font-size: 14px;
     }
-    .search-bar-container {
-        margin-left: 2px;
-    }
 
     .search-bar {
         width: 90vw;
@@ -372,7 +369,7 @@ html{
 
     .search-cross {
         font-size: 18px;
-        margin-left: 8px;
+        margin-left: 5px;
     }
 
     .icons {
@@ -459,10 +456,6 @@ html{
         font-size: 13px;
     }
 
-    .search-bar-container {
-        margin-left: 2px;
-    }
-
     .search-bar {
         width: 90vw;
         padding: 5px;
@@ -543,8 +536,12 @@ html{
     }
 
     .search-bar {
-        width: 86vw;
+        width: 88vw;
         padding: 5px;
+    }
+    .search-cross {
+        font-size: 15px;
+        margin-left: 4px;
     }
 
     #form {
