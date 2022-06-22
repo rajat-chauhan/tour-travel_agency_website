@@ -126,6 +126,9 @@ html{
     color: white;
     display: none;
 }
+.fa-bars:hover{
+    color: orange;
+}
 
 
 /* Login-Form */
@@ -900,7 +903,7 @@ html{
 /* Page-3 */
 .page3 {
     width: 100vw;
-    height: auto;
+    height: 200vh;
 }
 
 #p3_heading {
@@ -918,12 +921,6 @@ html{
     padding: 2px 8px 2px;
 }
 
-.p3_btns {
-    background-color: orange;
-    color: white;
-    border: none;
-}
-
 .p3_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -932,42 +929,57 @@ html{
     margin-left: 20px;
     margin-right: 20px;
 }
-
-.card {
+.p3_card {
     width: 27vw;
-    height: 72vh;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     box-shadow: 5px 5px 8px grey;
+    border-radius: 5px;
+    padding: 5px;
 }
-
-.card-title {
+.p3_card_img{
+    width: 27vw;
+    height: 28vh;
+    border-radius: 5px;
+}
+.loc img {
+    width: 20px;
+    height: 15px;
+    margin: 4px 4px 4px 0px;
+}
+.p3_card_title {
     overflow: hidden;
     font-size: 15px;
 }
-
-.card-text {
+.p3_card_text {
     font-size: 14px;
 }
-
 .price {
     font-weight: 800;
     font-size: 14px;
 }
-
 .cutPrice {
     margin-left: 4px;
     font-size: 12px;
     font-weight: 500;
     text-decoration: line-through;
 }
-
-.loc img {
-    width: 20px;
-    height: 15px;
-    margin: 4px 4px 4px 0px;
-}
-
 .checked {
     color: orange;
+}
+
+.p3_btns {
+    background-color: orange;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
 }
 
 
@@ -979,18 +991,25 @@ html{
     }
 
     .p3_container {
-        /* display: block; */
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
 
-    .card {
+    .p3_card {
         margin: 5px 5px 8px;
-        width: auto;
-        height: 62vh;
+        width: 80vw;
         box-shadow: 5px 5px 8px grey;
+    }
+    .p3_card_img{
+        width: 78vw;
+        height: 28vh;
+    }
+    .p3_btns {
+        font-size: 10px;
+        padding: 5px;
+        overflow: hidden;
     }
 }
 
@@ -1001,58 +1020,90 @@ html{
     }
 
     .p3_container {
-        /* display: block; */
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
 
-    .card {
+    .p3_card {
         margin: 5px 5px 8px;
-        width: 19rem;
+        width: 75vw;
         box-shadow: 5px 5px 8px grey;
+    }
+    .p3_card_img{
+        width: 73vw;
+        height: 30vh;
     }
 }
 
 @media screen and (min-width: 555px) and (max-width: 700px) {
+    .page3 {
+        width: 100vw;
+        height: 185vh;
+    }
     #p3_heading {
-        font-size: 1rem;
         margin-bottom: 2px;
+        font-size: 16px;
     }
 
     .p3_container {
         display: grid;
+        height: 168vh;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 68vh 68vh 68vh;
+        grid-template-rows: 54vh 54vh 54vh;
         grid-row-gap: 15px;
         margin-left: 20px;
         margin-right: 20px;
+        overflow: hidden;
     }
 
-    .card {
+    .p3_card {
         margin: 5px 5px 8px;
-        width: 15rem;
+        width: 44vw;
+        height: 52vh;
         box-shadow: 5px 5px 8px grey;
     }
 
     .p3_btns {
-        font-size: 14px;
+        font-size: 12.5px;
+        padding: 4px;
+        overflow: hidden;
     }
 
-    .card-title {
+    .p3_card_title {
         font-size: 1rem;
+        overflow: hidden;
     }
 
-    .card-text {
+    .p3_card_text {
         font-size: 10px;
+        overflow: hidden;
+    }
+
+    .p3_card_img{
+        width: 42vw;
+        height: 25vh;
+    }
+    .checked{
+        overflow: hidden;
+    }
+    .price {
+        font-size: 12.5px;
+        overflow: hidden;
+    }
+    .cutPrice {
+        margin-left: 4px;
+        font-size: 11.5px;
+        overflow: hidden;
     }
 }
 
-@media screen and (min-width: 651px) and (max-width: 1120px) {
+@media screen and (min-width: 700px) and (max-width: 1120px) {
     .p3_container {
         grid-template-rows: auto auto;
     }
+
 }
 
 
