@@ -299,7 +299,8 @@ html{
 /* Page-1 */
 .page1 {
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
+    margin-top: 7vh;
     position: relative;
 }
 
