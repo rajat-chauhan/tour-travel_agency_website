@@ -25,8 +25,7 @@ html{
 }
 
 
-
-
+/* Side Nav */
 .side-nav {
     background-color: rgb(155, 151, 151);
     width: 100vw;
@@ -55,6 +54,128 @@ html{
     color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
 }
+
+
+/* Login-Form */
+.form-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 1, 1);
+    display: none;
+
+}
+
+.displayForm {
+    display: block;
+}
+
+#form {
+    background-color: rgb(48, 45, 45);
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 4px;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+
+#form-heading {
+    text-align: center;
+    opacity: 0.6;
+    color: white;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+.form-email {
+    padding: 5px;
+    width: 35vw;
+    margin: 3px;
+}
+
+.form-pswd {
+    padding: 5px;
+    width: 35vw;
+    margin: 3px;
+}
+
+.form-btn {
+    padding: 5px;
+    width: 35vw;
+    margin: 3px;
+    font-size: 14px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-self: start;
+    font-size: 14px;
+    margin-left: 13px;
+    padding: 5px 5px 0 17px;
+}
+
+.label-form {
+    margin-left: 5px;
+    color: white;
+}
+
+.forget-pswd,
+.no-accnt {
+    margin-left: 5px;
+    padding-top: 2px;
+    color: white;
+    font-size: 14px;
+}
+
+.click-here,
+.rgstr-now {
+    text-decoration: none;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+    font-size: 14px;
+}
+
+.cross-mark {
+    color: white;
+    position: absolute;
+    right: 45px;
+    top: 10.5vh;
+    font-size: 25px;
+    cursor: pointer;
+}
+.form_cross_mark{
+    color: white;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+.form_cross_mark:hover{
+    color: orange;
+}
+#user:hover{
+    color: orange;
+}
+#search:hover{
+    color: orange;
+}
+
 
 /* Page-1 */
 .page1 {
@@ -111,7 +232,7 @@ html{
 }
 
 .icons {
-    position: absolute;
+    position: fixed;
     right: 5%;
     padding: 5px;
 }
@@ -122,6 +243,7 @@ html{
     margin: 4px 4px 4px 8px;
     cursor: pointer;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .search-box {
@@ -150,98 +272,6 @@ html{
     cursor: pointer;
 }
 
-.form-container {
-    position: relative;
-    width: 96vw;
-    height: 90vh;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 5px solid green; */
-    display: none;
-}
-
-.displayForm {
-    display: block;
-}
-
-#form {
-    background-color: rgb(173, 170, 170);
-    backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 4px;
-    position: absolute;
-    left: 30%;
-    top: 15%;
-}
-
-#form-heading {
-    text-align: center;
-    opacity: 0.6;
-}
-
-.form-email {
-    padding: 5px;
-    width: 35vw;
-    margin: 3px;
-}
-
-.form-pswd {
-    padding: 5px;
-    width: 35vw;
-    margin: 3px;
-}
-
-.form-btn {
-    padding: 5px;
-    width: 35vw;
-    margin: 3px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 2px;
-}
-
-.form-checkbox {
-    display: flex;
-    align-self: start;
-    font-size: 14px;
-    margin-left: 5px;
-    padding: 5px 5px 0 17px;
-}
-
-.label-form {
-    margin-left: 4px;
-}
-
-.forget-pswd,
-.no-accnt {
-    margin-left: 5px;
-    padding-top: 2px;
-}
-
-.click-here,
-.rgstr-now {
-    text-decoration: none;
-    color: orange;
-    text-shadow: 1px 1px 2px black;
-}
-
-.cross-mark {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 25px;
-    cursor: pointer;
-}
 
 .fa-bars {
     position: absolute;
@@ -271,17 +301,19 @@ html{
 
 .content-head {
     font-family: 'Bebas Neue', cursive;
-    font-size: 2.5rem;
+    font-size: 40px;
     overflow: hidden;
 }
 
 .content-desc {
     padding: 8px;
+    font-size: 20px;
 }
 
 .content-btn {
     padding: 8px 10px;
     margin: 4px;
+    font-size: 18px;
     background-color: orange;
     color: white;
     border: none;
