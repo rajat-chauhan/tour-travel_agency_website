@@ -18,12 +18,12 @@ form_cross.addEventListener("click", function(){
 })
 
 search_icon.addEventListener("click", function(){
-    let search_box = document.querySelector(".search-box");
+    let search_box = document.querySelector(".lower_header");
     search_box.classList.add("displaySearch");
 })
 
 search_cross.addEventListener("click", function(){
-    let search_box = document.querySelector(".search-box");
+    let search_box = document.querySelector(".lower_header");
     search_box.classList.remove("displaySearch");
 })
 
