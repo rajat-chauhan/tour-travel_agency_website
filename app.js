@@ -83,15 +83,15 @@ radio_btn1.addEventListener("click", function(){
 
 radio_btn2.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
-    p1.style.backgroundImage = "url(./images/maui.jpg)"
+    p1.style.backgroundImage = "url(./images/p1nature.jpg)"
 })
 radio_btn3.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
-    p1.style.backgroundImage = "url(./images/leh.jpg)"
+    p1.style.backgroundImage = "url(./images/p1_hot-air-balloons.jpg)"
 })
 radio_btn4.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
-    p1.style.backgroundImage = "url(./images/veniceItaly.jpg)"
+    p1.style.backgroundImage = "url(./images/p1adventure.jpg)"
 })
 
 

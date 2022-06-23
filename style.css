@@ -305,7 +305,7 @@ html{
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-image: url("./images/p1mountain.jpg");
+    background-image: url("./images/p1_default_img.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
