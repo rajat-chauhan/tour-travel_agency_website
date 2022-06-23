@@ -9,6 +9,15 @@ let radio_btn1 = document.querySelector(".radio-btn1");
 let radio_btn2 = document.querySelector(".radio-btn2");
 let radio_btn3 = document.querySelector(".radio-btn3");
 let radio_btn4 = document.querySelector(".radio-btn4");
+let homeNav = document.querySelectorAll(".homeNav");
+
+homeNav.forEach((value) => {
+    value.addEventListener("click", function(){
+    let pge1 = document.querySelector(".page1");
+    pge1.classList.add("p1_sizing");
+    })
+})
+
 
 user_icon.addEventListener("click", function(){
     let form = document.querySelector(".form-container");

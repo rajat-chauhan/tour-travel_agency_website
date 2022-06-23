@@ -303,22 +303,21 @@ html{
 /* Page-1 */
 .page1 {
     width: 100vw;
-    height: 100vh;
+    height: 91vh;
     position: relative;
     background-image: url("./images/p1_default_img.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
 
-.content {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    position: absolute;
-    top: 0;
+    justify-content: center;
+}
+
+.p1_sizing{
+    width: 100vw;
+    height: 101vh;
 }
 
 .content-head {
