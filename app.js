@@ -5,7 +5,10 @@ let search_icon = document.getElementById("search");
 let search_cross = document.querySelector(".search-cross");
 let bar_icon = document.querySelector(".fa-bars");
 let sideNav_cross = document.querySelector(".cross-mark-sideNav");
-
+let radio_btn1 = document.querySelector(".radio-btn1");
+let radio_btn2 = document.querySelector(".radio-btn2");
+let radio_btn3 = document.querySelector(".radio-btn3");
+let radio_btn4 = document.querySelector(".radio-btn4");
 
 user_icon.addEventListener("click", function(){
     let form = document.querySelector(".form-container");
@@ -71,6 +74,36 @@ side_href.forEach((value) => {
 
 
 
+//Page-1
+
+radio_btn1.addEventListener("click", function(){
+    let p1 = document.querySelector(".page1");
+    p1.style.backgroundImage = "url(./images/beachGoa.jpg)";
+})
+
+radio_btn2.addEventListener("click", function(){
+    let p1 = document.querySelector(".page1");
+    p1.style.backgroundImage = "url(./images/maui.jpg)"
+})
+radio_btn3.addEventListener("click", function(){
+    let p1 = document.querySelector(".page1");
+    p1.style.backgroundImage = "url(./images/leh.jpg)"
+})
+radio_btn4.addEventListener("click", function(){
+    let p1 = document.querySelector(".page1");
+    p1.style.backgroundImage = "url(./images/veniceItaly.jpg)"
+})
+
+
+
+
+
+
+
+
+
+
+
 //Page-5
 
 let p5_img = document.querySelectorAll(".p5_images");
@@ -90,28 +123,3 @@ for(let i=0; i< p5_img.length; i++){
 }
 
 
-
-//   // import Swiper JS
-// import Swiper from 'swiper';
-//   // import Swiper styles
-// import 'swiper/css';
-
-var swiper = new Swiper(".p6_containerr", {
-    spaceBetween: 5,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    },
-});
