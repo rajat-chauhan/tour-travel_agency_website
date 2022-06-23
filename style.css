@@ -1565,7 +1565,7 @@ html{
   
   .slides {
     display: flex;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -1632,6 +1632,20 @@ html{
     pointer-events: none;
   }
   
+
+/* For Responsiveness Page-6 */
+@media screen and (min-width: 358px) and (max-width: 520px){
+    .p6_card{
+        margin: 10px;
+        width: 60vw;
+        height: 50vh;   
+    }
+    .p6_img{
+        margin-top: 10px;
+        width: 25vw;
+        height: 20vh;
+    }
+}    
 
 
 
