@@ -78,7 +78,7 @@ side_href.forEach((value) => {
 
 radio_btn1.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
-    p1.style.backgroundImage = "url(./images/beachGoa.jpg)";
+    p1.style.backgroundImage = "url(./images/p1road.jpg)";
 })
 
 radio_btn2.addEventListener("click", function(){

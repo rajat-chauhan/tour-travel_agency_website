@@ -305,21 +305,20 @@ html{
     width: 100vw;
     height: 100vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("./images/maldives.jpg");
+    background-image: url("./images/p1mountain.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .content {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    position: absolute;
+    top: 0;
 }
 
 .content-head {
@@ -327,12 +326,14 @@ html{
     font-size: 40px;
     overflow: hidden;
     color: orange;
+    margin-top: 25vh;
 }
 
 .content-desc {
     padding: 8px;
     font-size: 20px;
-    color: white;
+    font-weight: 600;
+    color: black;
 }
 
 .content-btn {
@@ -345,10 +346,12 @@ html{
     outline: none;
 }
 .p1_scroll_img_cont{
-    margin-bottom: 10px;
+    position: absolute;
+    bottom: 11vh;
 }
 .radio_btns{
-    color: white;
+    font-size: 18px;
+    color: grey;
     cursor: pointer;
 }
 .radio_btns:checked{
@@ -544,6 +547,7 @@ html{
 }
 
 @media screen and (min-width: 358px) and (max-width: 619px) {
+
     .top-nav {
         display: none;
     }
@@ -650,6 +654,13 @@ html{
     }
     #user, #search{
     font-size: 14px;
+    }
+    .page1 {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .p1_scroll_img_cont{
+        margin-bottom: 15px;
     }
 }
 
