@@ -715,9 +715,9 @@ html{
 
 .p1_content{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px rgb(167, 153, 127);
+    background-color: rgba(82, 76, 76, 0.6);
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgb(167, 153, 127);
 }
 .content-head {
     font-family: 'Bebas Neue', cursive;
@@ -725,13 +725,15 @@ html{
     overflow: hidden;
     color: orange;
     margin-top: 5vh;
+    text-shadow: 2px 2px 4px black;
 }
 
 .content-desc {
     padding: 8px;
     font-size: 20px;
-    font-weight: 600;
-    color: black;
+    font-weight: 500;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 /* .content-btn {
@@ -1529,7 +1531,8 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 5px 5px 10px grey;    
+    box-shadow: 5px 5px 10px grey;  
+    border-radius: 5px;  
 }
 .p6_card_contt{
     margin-top: 8px;
@@ -1570,10 +1573,10 @@ html{
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
   }
-  
+/*   
   .slide:nth-of-type(even) {
     background-color: rgb(250, 246, 212);
-  }
+  } */
   
   .slide {
     display: flex;
@@ -1586,7 +1589,7 @@ html{
     margin-right: 0px;
     margin-bottom: 10vh;
     box-sizing: border-box;
-    background: white;
+    background-color: rgb(250, 246, 212);
     transform-origin: center center;
     transform: scale(1);
   }
