@@ -1705,12 +1705,12 @@ html{
     }
 
     .p7_form {
-        width: 100%;
+        width: 100vw;
         
     }
 
     .p7_img {
-        width: 100%;
+        width: 100vw;
         display: none;
     }
 
