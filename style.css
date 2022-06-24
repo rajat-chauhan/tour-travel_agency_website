@@ -1414,7 +1414,7 @@ html{
     position: relative;  
 }
 #p6_heading {
-    margin-top: 11vh;
+    margin-top: 11.5vh;
     text-align: center;
     overflow: hidden;
 }
@@ -1553,6 +1553,15 @@ html{
         margin-top: 10px;
         width: 25vw;
         height: 20vh;
+    }
+    .slider::before,
+    .slider::after,
+    .slide__prev,
+    .slide__next {
+      width: 20px;
+      height: 20px;
+      border-width: 0 4px 4px 0;
+      padding: 3px;
     }
 }    
 
