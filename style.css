@@ -736,16 +736,6 @@ html{
     text-shadow: 2px 2px 4px black;
 }
 
-/* .content-btn {
-    padding: 8px 10px;
-    margin: 4px;
-    font-size: 18px;
-    background-color: orange;
-    color: white;
-    border: none;
-    outline: none;
-} */
-
 .p1_scroll_img_cont{
     position: absolute;
     bottom: 8vh;
@@ -1416,97 +1406,15 @@ html{
 
 
 
-
 /* Page-6 */
-/* .page6 {
-    width: 100vw;
-    height: 100vh;
-    
-}
-#p6_heading {
-    margin-top: 11.5vh;
-    margin-bottom: 20px;
-    text-align: center;
-    overflow: hidden;
-}
-.page6-headAlpha {
-    background-color: rgb(230, 225, 225);
-    color: rgb(252, 171, 22);
-    width: 5px;
-    height: 3px;
-    padding: 2px 8px 2px;
-}
-.p6_container{
-    margin: 5px;
-    width: 100vw;
-    height: 90vh;
-    
-}
-.slides{
-    display: grid;
-    grid-template-rows: 100vw;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.p6_card{
-    margin: 10px;
-    width: 22vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 5px 5px 10px grey;
-    
-}
-.p6_card_contt{
-    text-align: center;
-    overflow: hidden;
-}
-.card-title{
-    overflow: hidden;
-}
-.p6_img{
-    margin-top: 10px;
-    width: 9vw;
-    height: 17vh;
-    border-radius: 50%;
-}
-
-/* For Responsiveness of Page-6 */
-/* @media screen and (min-width: 358px) and (max-width: 620px){
-    .p6_container{
-        margin-top: 12vh;
-    }
-    
-    .slide{
-        margin: 10px;
-        width: 90vw;
-        height: auto;
-    }
-    .p6_card{
-        margin: 10px;
-        width: 90vw;
-        height: auto;
-    }
-    .p6_img{
-        margin-top: 15px;
-        width: 36vw;
-        height: 18vh;
-        
-    }
-} */
-
-
-
-
 .page6 {
     width: 100vw;
-    height: 90vh;
-    
+    height: 100vh; 
+    margin-top: 10vh;
+    position: relative;  
 }
 #p6_heading {
-    margin-top: 11.5vh;
+    margin-top: 11vh;
     text-align: center;
     overflow: hidden;
 }
@@ -1551,8 +1459,10 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 91vh;
     width: 100vw;
+    position: absolute;
+    top: 9vh;
   }
   
   .slider {
@@ -1568,15 +1478,11 @@ html{
   
   .slides {
     display: flex;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
     position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
   }
-/*   
-  .slide:nth-of-type(even) {
-    background-color: rgb(250, 246, 212);
-  } */
   
   .slide {
     display: flex;
@@ -1820,10 +1726,6 @@ html{
     padding-right: 8px;
 }
 .upper_footer{
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 20px; */
     display: flex;
     justify-content: center;   
     padding-top: 30px;
