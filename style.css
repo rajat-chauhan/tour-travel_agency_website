@@ -754,8 +754,8 @@ html{
 @media screen and (min-width: 300px) and (max-width: 619px){
     .page1 {
         background-repeat: no-repeat;
-        background-size: cover;
-        /* background-position: center; */
+        background-size: auto;
+        background-position: center;
     }
     .p1_scroll_img_cont{
         margin-bottom: 15px;
