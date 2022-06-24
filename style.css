@@ -16,8 +16,8 @@ html{
 }
 .body{
     width: 100vw;
-    height: 100vh;
-    position: relative;
+    height: 100vh; 
+    position: relative; 
 }
 .position{
     position: relative;
@@ -63,7 +63,7 @@ html{
 /* Header */
 .header{
     width: 100vw;
-    height: 9vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,7 +73,7 @@ html{
     position: fixed;
     top: 0; left: 0; right: 0;
     width: 100vw;
-    height: 9vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -83,7 +83,7 @@ html{
 }
 .lower_header{
     position: fixed;
-    top: 9vh; left: 0; right: 0;
+    top: 10vh; left: 0; right: 0;
     z-index: 1000;
     display: none;
 }
@@ -694,10 +694,15 @@ html{
 
 
 /* Page-1 */
+#p1{
+    width: 100vw;
+    height: 100vh;
+}
 .page1 {
     width: 100vw;
-    height: 91vh;
+    height: 90vh;
     position: relative;
+    z-index: 0;
     background-image: url("./images/p1nature.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -710,7 +715,8 @@ html{
 
 .p1_sizing{
     width: 100vw;
-    height: 101vh;
+    height: 100vh;
+    min-height: 90vh;
 }
 
 .p1_content{
@@ -789,7 +795,7 @@ html{
 }
 
 #page2-heading {
-    margin-top: 11.5vh;  
+    /* margin-top: 11.5vh;   */
     overflow: hidden;  
 }
 
@@ -879,7 +885,7 @@ html{
     }
 
     #page2_heading {
-        margin-top: 11.5vh;
+        /* margin-top: 11.5vh; */
         margin-bottom: 14px;
         text-align: center;
         overflow: hidden;
@@ -954,7 +960,7 @@ html{
 
 #p3_heading {
     /* margin-top: 11.5vh; */
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     text-align: center;
     overflow: hidden;
 }

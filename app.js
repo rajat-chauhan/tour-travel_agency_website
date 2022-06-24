@@ -109,10 +109,6 @@ radio_btn4.addEventListener("click", function(){
 
 
 
-
-
-
-
 //Page-5
 
 let p5_img = document.querySelectorAll(".p5_images");
