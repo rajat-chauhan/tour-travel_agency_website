@@ -92,7 +92,7 @@ radio_btn1.addEventListener("click", function(){
 
 radio_btn2.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
-    p1.style.backgroundImage = "url(./images/p1nature.jpg)"
+    p1.style.backgroundImage = "url(./images/p1adventure.jpg)"
 })
 radio_btn3.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
@@ -100,7 +100,7 @@ radio_btn3.addEventListener("click", function(){
 })
 radio_btn4.addEventListener("click", function(){
     let p1 = document.querySelector(".page1");
-    p1.style.backgroundImage = "url(./images/p1adventure.jpg)"
+    p1.style.backgroundImage = "url(./images/p1_default_img.jpg)"
 })
 
 

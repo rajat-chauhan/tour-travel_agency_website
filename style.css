@@ -698,7 +698,7 @@ html{
     width: 100vw;
     height: 91vh;
     position: relative;
-    background-image: url("./images/p1_default_img.jpg");
+    background-image: url("./images/p1nature.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -754,7 +754,8 @@ html{
 @media screen and (min-width: 300px) and (max-width: 619px){
     .page1 {
         background-repeat: no-repeat;
-        background-position: center;
+        background-size: cover;
+        /* background-position: center; */
     }
     .p1_scroll_img_cont{
         margin-bottom: 15px;
@@ -1552,7 +1553,19 @@ html{
     .p6_img{
         margin-top: 10px;
         width: 25vw;
-        height: 20vh;
+        height: 16vh;
+    }
+    .p6_card_contt{
+        margin-top: 12px;
+    }
+    .card-title{
+        overflow: hidden;
+    }
+    .card-text{
+        margin-top: 8px;
+    }
+    .starRating{
+        margin-top: 20px;
     }
     .slider::before,
     .slider::after,
