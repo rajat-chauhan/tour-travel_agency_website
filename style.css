@@ -780,8 +780,8 @@ html{
 /* Page-2 */
 .page2 {
     width: 100vw;
-    height: 90vh;
-    margin-top: 10vh;
+    height: 100vh;
+    /* margin-top: 10vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -953,7 +953,7 @@ html{
 }
 
 #p3_heading {
-    margin-top: 11.5vh;
+    /* margin-top: 11.5vh; */
     margin-bottom: 14px;
     text-align: center;
     overflow: hidden;
@@ -1161,7 +1161,7 @@ html{
 }
 
 #p4_heading {
-    margin-top: 11.5vh;
+    /* margin-top: 11.5vh; */
     margin-bottom: 10px;
     text-align: center;
     overflow: hidden;
@@ -1277,7 +1277,7 @@ html{
 }
 
 #p5_heading {
-    margin-top: 11vh;
+    /* margin-top: 11vh; */
     text-align: center;
     overflow: hidden;
 }
@@ -1411,11 +1411,11 @@ html{
 .page6 {
     width: 100vw;
     height: 100vh; 
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     position: relative;  
 }
 #p6_heading {
-    margin-top: 11.5vh;
+    /* margin-top: 11.5vh; */
     text-align: center;
     overflow: hidden;
 }
@@ -1587,7 +1587,7 @@ html{
 }
 
 #p7_heading {
-    margin-top: 11vh;
+    /* margin-top: 11vh; */
     text-align: center;
     overflow: hidden;
 }
@@ -1676,7 +1676,7 @@ html{
     }
 
     #p7_heading {
-        margin-top: 11.5vh;
+        /* margin-top: 11.5vh; */
         margin-bottom: 1vh;
         font-size: 16px;
     }
