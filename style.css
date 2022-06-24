@@ -1676,12 +1676,14 @@ html{
 
 
 /* For Responsiveness Page-7 */
-@media screen and (min-width: 358px) and (max-width: 520px) {
+@media screen and (min-width: 320px) and (max-width: 520px) {
     .page7 {
         background-image: url("./images/contact_bg.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        display: flex;
+        flex-direction: column;
     }
 
     #p7_heading {
@@ -1704,6 +1706,7 @@ html{
 
     .p7_form {
         width: 100%;
+        
     }
 
     .p7_img {
