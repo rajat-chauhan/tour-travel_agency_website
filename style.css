@@ -1816,9 +1816,17 @@ html{
 }
 .lower_footer_text{
     color: rgb(134, 159, 178);
+    font-size: 14px;
 }
 .creator{
     color: orange;
+}
+.creator_link{
+    text-decoration: none;
+}
+.creator:hover{
+    font-size: 16px;
+    font-weight: 600;
 }
 
 /* For Responsiveness of footer */
